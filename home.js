@@ -12,3 +12,17 @@ button.addEventListener("click", () => {
     }
 });
 
+const button2 = document.querySelector(".button2");
+const workongallery = document.querySelector(".workongallery");
+
+button2.addEventListener("click", () => {
+    workongallery.classList.toggle("open");
+    
+    if(workongallery.classList.contains("open")){
+      button2.textContent = "Hide Work";
+    } 
+    else {
+      button.textContent = "View Work";
+    }
+});
+
